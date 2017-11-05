@@ -9,19 +9,19 @@
 /* Begin PBXBuildFile section */
 		1340E84E1FAF475700EEC32E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1340E84D1FAF475700EEC32E /* AppDelegate.swift */; };
 		1340E8501FAF475700EEC32E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1340E84F1FAF475700EEC32E /* ViewController.swift */; };
-		1340E8531FAF475700EEC32E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1340E8511FAF475700EEC32E /* Main.storyboard */; };
 		1340E8551FAF475700EEC32E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1340E8541FAF475700EEC32E /* Assets.xcassets */; };
 		1340E8581FAF475700EEC32E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1340E8561FAF475700EEC32E /* LaunchScreen.storyboard */; };
+		1340E8601FAF477600EEC32E /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1340E85F1FAF477500EEC32E /* ActivityIndicator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1340E84A1FAF475700EEC32E /* CozyComponents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CozyComponents.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1340E84D1FAF475700EEC32E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1340E84F1FAF475700EEC32E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1340E8521FAF475700EEC32E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1340E8541FAF475700EEC32E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1340E8571FAF475700EEC32E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1340E8591FAF475700EEC32E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1340E85F1FAF477500EEC32E /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +55,8 @@
 			isa = PBXGroup;
 			children = (
 				1340E84D1FAF475700EEC32E /* AppDelegate.swift */,
+				1340E85F1FAF477500EEC32E /* ActivityIndicator.swift */,
 				1340E84F1FAF475700EEC32E /* ViewController.swift */,
-				1340E8511FAF475700EEC32E /* Main.storyboard */,
 				1340E8541FAF475700EEC32E /* Assets.xcassets */,
 				1340E8561FAF475700EEC32E /* LaunchScreen.storyboard */,
 				1340E8591FAF475700EEC32E /* Info.plist */,
@@ -125,7 +125,6 @@
 			files = (
 				1340E8581FAF475700EEC32E /* LaunchScreen.storyboard in Resources */,
 				1340E8551FAF475700EEC32E /* Assets.xcassets in Resources */,
-				1340E8531FAF475700EEC32E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +136,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1340E8501FAF475700EEC32E /* ViewController.swift in Sources */,
+				1340E8601FAF477600EEC32E /* ActivityIndicator.swift in Sources */,
 				1340E84E1FAF475700EEC32E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -144,14 +144,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1340E8511FAF475700EEC32E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1340E8521FAF475700EEC32E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1340E8561FAF475700EEC32E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -277,10 +269,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3MWGTS2LLK;
 				INFOPLIST_FILE = CozyComponents/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jatin.CozyComponents;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -292,10 +285,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3MWGTS2LLK;
 				INFOPLIST_FILE = CozyComponents/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jatin.CozyComponents;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
