@@ -150,6 +150,7 @@ import UIKit
     fileprivate lazy var textInput: UITextView = {
         let t = UITextView()
         t.delegate = self
+        t.backgroundColor = .clear
         t.isScrollEnabled = false
         t.translatesAutoresizingMaskIntoConstraints = false
         t.font = self.textInputFont
