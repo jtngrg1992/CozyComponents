@@ -23,6 +23,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let viewController = ViewController()
         window?.rootViewController = viewController
         
+        NMGFlashMessage.shared.configureDialog(titleFont: UIFont(name: "Avenir-Heavy", size: 20)!,
+                                               messageFont: UIFont(name: "Avenir", size: 15)!,
+                                               titleFontColor: UIColor.init(red: 80.0/255.0, green: 85.0/255.0, blue: 88.0/255.0, alpha: 1),
+                                               messageFontColor: UIColor.init(red: 80.0/255.0, green: 85.0/255.0, blue: 88.0/255.0, alpha: 1),
+                                               errorImage: #imageLiteral(resourceName: "error"),
+                                               successImage: #imageLiteral(resourceName: "snap"),
+                                               neutralImage: #imageLiteral(resourceName: "success"),
+                                               headerColor: .white,
+                                               backgroundColor: UIColor.init(red: 1, green: 1, blue: 1, alpha: 1),
+                                               actionBackgroundColor: UIColor.init(red: 246.0/255.0, green: 86.0/255.0, blue: 86.0/255.0, alpha: 1),
+                                               actionFont: UIFont(name: "Avenir-Heavy", size: 17)!,
+                                               actionColor: .white)
         return true
     }
 

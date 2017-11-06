@@ -12,6 +12,12 @@
 		1340E8551FAF475700EEC32E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1340E8541FAF475700EEC32E /* Assets.xcassets */; };
 		1340E8581FAF475700EEC32E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1340E8561FAF475700EEC32E /* LaunchScreen.storyboard */; };
 		1340E8601FAF477600EEC32E /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1340E85F1FAF477500EEC32E /* ActivityIndicator.swift */; };
+		FFC15E9D1FB023260055C9B3 /* NMGTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC15E9C1FB023260055C9B3 /* NMGTextField.swift */; };
+		FFC15EA71FB024A40055C9B3 /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = FFC15EA01FB024A40055C9B3 /* TPKeyboardAvoidingCollectionView.m */; };
+		FFC15EA81FB024A40055C9B3 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = FFC15EA21FB024A40055C9B3 /* TPKeyboardAvoidingScrollView.m */; };
+		FFC15EA91FB024A40055C9B3 /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = FFC15EA41FB024A40055C9B3 /* TPKeyboardAvoidingTableView.m */; };
+		FFC15EAA1FB024A40055C9B3 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FFC15EA61FB024A40055C9B3 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
+		FFC15EB11FB02A090055C9B3 /* NMGMessageFlash.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC15EB01FB02A090055C9B3 /* NMGMessageFlash.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,17 @@
 		1340E8571FAF475700EEC32E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1340E8591FAF475700EEC32E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1340E85F1FAF477500EEC32E /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		FFC15E9C1FB023260055C9B3 /* NMGTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NMGTextField.swift; sourceTree = "<group>"; };
+		FFC15E9F1FB024A40055C9B3 /* TPKeyboardAvoidingCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingCollectionView.h; sourceTree = "<group>"; };
+		FFC15EA01FB024A40055C9B3 /* TPKeyboardAvoidingCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingCollectionView.m; sourceTree = "<group>"; };
+		FFC15EA11FB024A40055C9B3 /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
+		FFC15EA21FB024A40055C9B3 /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
+		FFC15EA31FB024A40055C9B3 /* TPKeyboardAvoidingTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingTableView.h; sourceTree = "<group>"; };
+		FFC15EA41FB024A40055C9B3 /* TPKeyboardAvoidingTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingTableView.m; sourceTree = "<group>"; };
+		FFC15EA51FB024A40055C9B3 /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
+		FFC15EA61FB024A40055C9B3 /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
+		FFC15EAF1FB0272B0055C9B3 /* CozyComponents-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CozyComponents-Bridging-Header.h"; sourceTree = "<group>"; };
+		FFC15EB01FB02A090055C9B3 /* NMGMessageFlash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NMGMessageFlash.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +55,7 @@
 		1340E8411FAF475700EEC32E = {
 			isa = PBXGroup;
 			children = (
+				FFC15EAF1FB0272B0055C9B3 /* CozyComponents-Bridging-Header.h */,
 				1340E84C1FAF475700EEC32E /* CozyComponents */,
 				1340E84B1FAF475700EEC32E /* Products */,
 			);
@@ -54,7 +72,10 @@
 		1340E84C1FAF475700EEC32E /* CozyComponents */ = {
 			isa = PBXGroup;
 			children = (
+				FFC15E9E1FB024A40055C9B3 /* Dependencies */,
 				1340E84D1FAF475700EEC32E /* AppDelegate.swift */,
+				FFC15E9C1FB023260055C9B3 /* NMGTextField.swift */,
+				FFC15EB01FB02A090055C9B3 /* NMGMessageFlash.swift */,
 				1340E85F1FAF477500EEC32E /* ActivityIndicator.swift */,
 				1340E84F1FAF475700EEC32E /* ViewController.swift */,
 				1340E8541FAF475700EEC32E /* Assets.xcassets */,
@@ -62,6 +83,21 @@
 				1340E8591FAF475700EEC32E /* Info.plist */,
 			);
 			path = CozyComponents;
+			sourceTree = "<group>";
+		};
+		FFC15E9E1FB024A40055C9B3 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				FFC15E9F1FB024A40055C9B3 /* TPKeyboardAvoidingCollectionView.h */,
+				FFC15EA01FB024A40055C9B3 /* TPKeyboardAvoidingCollectionView.m */,
+				FFC15EA11FB024A40055C9B3 /* TPKeyboardAvoidingScrollView.h */,
+				FFC15EA21FB024A40055C9B3 /* TPKeyboardAvoidingScrollView.m */,
+				FFC15EA31FB024A40055C9B3 /* TPKeyboardAvoidingTableView.h */,
+				FFC15EA41FB024A40055C9B3 /* TPKeyboardAvoidingTableView.m */,
+				FFC15EA51FB024A40055C9B3 /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
+				FFC15EA61FB024A40055C9B3 /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
+			);
+			path = Dependencies;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +171,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFC15EB11FB02A090055C9B3 /* NMGMessageFlash.swift in Sources */,
+				FFC15EA71FB024A40055C9B3 /* TPKeyboardAvoidingCollectionView.m in Sources */,
+				FFC15E9D1FB023260055C9B3 /* NMGTextField.swift in Sources */,
+				FFC15EA91FB024A40055C9B3 /* TPKeyboardAvoidingTableView.m in Sources */,
 				1340E8501FAF475700EEC32E /* ViewController.swift in Sources */,
+				FFC15EA81FB024A40055C9B3 /* TPKeyboardAvoidingScrollView.m in Sources */,
+				FFC15EAA1FB024A40055C9B3 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 				1340E8601FAF477600EEC32E /* ActivityIndicator.swift in Sources */,
 				1340E84E1FAF475700EEC32E /* AppDelegate.swift in Sources */,
 			);
@@ -273,6 +315,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jatin.CozyComponents;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CozyComponents-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -289,6 +332,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jatin.CozyComponents;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CozyComponents-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
