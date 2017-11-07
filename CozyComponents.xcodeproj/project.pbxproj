@@ -12,6 +12,7 @@
 		1340E8551FAF475700EEC32E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1340E8541FAF475700EEC32E /* Assets.xcassets */; };
 		1340E8581FAF475700EEC32E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1340E8561FAF475700EEC32E /* LaunchScreen.storyboard */; };
 		1340E8601FAF477600EEC32E /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1340E85F1FAF477500EEC32E /* ActivityIndicator.swift */; };
+		FF9345591FB1ED1D0013CB53 /* NMGCheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9345581FB1ED1D0013CB53 /* NMGCheckBox.swift */; };
 		FFC15E9D1FB023260055C9B3 /* NMGTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC15E9C1FB023260055C9B3 /* NMGTextField.swift */; };
 		FFC15EA71FB024A40055C9B3 /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = FFC15EA01FB024A40055C9B3 /* TPKeyboardAvoidingCollectionView.m */; };
 		FFC15EA81FB024A40055C9B3 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = FFC15EA21FB024A40055C9B3 /* TPKeyboardAvoidingScrollView.m */; };
@@ -28,6 +29,7 @@
 		1340E8571FAF475700EEC32E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1340E8591FAF475700EEC32E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1340E85F1FAF477500EEC32E /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		FF9345581FB1ED1D0013CB53 /* NMGCheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NMGCheckBox.swift; sourceTree = "<group>"; };
 		FFC15E9C1FB023260055C9B3 /* NMGTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NMGTextField.swift; sourceTree = "<group>"; };
 		FFC15E9F1FB024A40055C9B3 /* TPKeyboardAvoidingCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingCollectionView.h; sourceTree = "<group>"; };
 		FFC15EA01FB024A40055C9B3 /* TPKeyboardAvoidingCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingCollectionView.m; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				1340E84D1FAF475700EEC32E /* AppDelegate.swift */,
 				FFC15E9C1FB023260055C9B3 /* NMGTextField.swift */,
 				FFC15EB01FB02A090055C9B3 /* NMGMessageFlash.swift */,
+				FF9345581FB1ED1D0013CB53 /* NMGCheckBox.swift */,
 				1340E85F1FAF477500EEC32E /* ActivityIndicator.swift */,
 				1340E84F1FAF475700EEC32E /* ViewController.swift */,
 				1340E8541FAF475700EEC32E /* Assets.xcassets */,
@@ -172,6 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFC15EB11FB02A090055C9B3 /* NMGMessageFlash.swift in Sources */,
+				FF9345591FB1ED1D0013CB53 /* NMGCheckBox.swift in Sources */,
 				FFC15EA71FB024A40055C9B3 /* TPKeyboardAvoidingCollectionView.m in Sources */,
 				FFC15E9D1FB023260055C9B3 /* NMGTextField.swift in Sources */,
 				FFC15EA91FB024A40055C9B3 /* TPKeyboardAvoidingTableView.m in Sources */,
