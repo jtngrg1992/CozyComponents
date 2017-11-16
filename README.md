@@ -69,3 +69,15 @@ NMGFlashMessage.shared.show(withTitle: "Test", usingMessage: "This is a test", h
 ```
 
 ![ScreenShot](https://raw.github.com/jtngrg1992/CozyComponents/master/Screenshots/NMGFlash1.png)
+
+ ## 4. NMGCheckBox
+ 
+ > A checkbox to use in projects
+
+###### Usage
+
+```swift
+let check = NMGCheckBox(checked: false, fillColor: UIColor.init(red: 246.0/255.0, green: 86.0/255.0, blue: 86.0/255.0, alpha: 1), checkColor: .white)
+```
+![ScreenShot](https://raw.github.com/jtngrg1992/CozyComponents/master/Screenshots/NMGC1.png)
+![ScreenShot](https://raw.github.com/jtngrg1992/CozyComponents/master/Screenshots/NMGC2.png)
