@@ -378,6 +378,20 @@ extension NMGTextField: UITextViewDelegate, UITextFieldDelegate{
         }
     }
     
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        guard let currentText = textView.text else {
+            return true
+        }
+        
+        if currentText.trim().count == 0 && text == "\n"{
+            //the textView is currently empty and the user has pressed return
+            return false
+        }else if currentText.last == "\n" && text == "\n"{
+            return false
+        }
+        return true
+    }
+    
 }
 
 
