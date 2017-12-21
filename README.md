@@ -81,3 +81,11 @@ let check = NMGCheckBox(checked: false, fillColor: UIColor.init(red: 246.0/255.0
 ```
 ![ScreenShot](https://raw.github.com/jtngrg1992/CozyComponents/master/Screenshots/NMGC1.png)
 ![ScreenShot](https://raw.github.com/jtngrg1992/CozyComponents/master/Screenshots/NMGC2.png)
+
+## 5. CustomtextField
+ 
+ > Another variation of nmg textfield
+ 
+![ScreenShot](https://raw.github.com/jtngrg1992/CozyComponents/master/Screenshots/Screen Shot 2017-12-21 at 12.21.20 PM.png)
+![ScreenShot](https://raw.github.com/jtngrg1992/CozyComponents/master/Screenshots/Screen Shot 2017-12-21 at 12.21.28 PM.png)
+ 
