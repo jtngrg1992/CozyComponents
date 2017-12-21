@@ -308,7 +308,7 @@ class NMGMessageFlash: UIView {
         
     }
     
-    func actionTapped(_ sender: UIButton){
+    @objc func actionTapped(_ sender: UIButton){
         delegate?.actionHandler?()
         self.hide()
     }

@@ -157,7 +157,7 @@ class MessageActivityIndicator: UIView{
     
     var totalHeight: CGFloat {
         let text = messageLabel.text
-        let size = (text! as NSString).boundingRect(with: CGSize(width: messageLabel.bounds.width, height: .greatestFiniteMagnitude), options: .usesLineFragmentOrigin, attributes: [NSFontAttributeName : messageLabel.font], context: nil)
+        let size = (text! as NSString).boundingRect(with: CGSize(width: messageLabel.bounds.width, height: .greatestFiniteMagnitude), options: .usesLineFragmentOrigin, attributes: [NSAttributedStringKey.font : messageLabel.font], context: nil)
         return size.height > 60 ? size.height : 60
     }
     

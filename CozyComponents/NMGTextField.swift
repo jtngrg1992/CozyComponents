@@ -63,17 +63,17 @@ import UIKit
     func switchToTF(){
         textInputHeight.constant = 0
         secureTextEntryHeight.constant = 30
-        placeHolderCenter.priority = 998
-        placeHolderCenter2.priority = 999
-        placeholderBottom2.priority = 999
+        placeHolderCenter.priority = UILayoutPriority(rawValue: 998)
+        placeHolderCenter2.priority = UILayoutPriority(rawValue: 999)
+        placeholderBottom2.priority = UILayoutPriority(rawValue: 999)
         layoutSubviews()
     }
     
     func switchToTV(){
         textInputHeight.constant = getHeightConstant(forControl: textInput, usingText: "test")!
         secureTextEntryHeight.constant = 0
-        placeHolderCenter2.priority = 998
-        placeHolderCenter.priority = 999
+        placeHolderCenter2.priority = UILayoutPriority(rawValue: 998)
+        placeHolderCenter.priority = UILayoutPriority(rawValue: 999)
         layoutSubviews()
     }
     
@@ -132,14 +132,14 @@ import UIKit
         }set{
             if secureTextEntry{
                 secureTextEntryView.text = newValue
-                placeHolderCenter2.priority = 998
-                placeholderBottom2.priority = 999
+                placeHolderCenter2.priority = UILayoutPriority(rawValue: 998)
+                placeholderBottom2.priority = UILayoutPriority(rawValue: 999)
                 addConstraint(placeholderBottom2)
                 
             }else{
                 textInput.text = newValue
-                placeHolderCenter.priority = 998
-                placeHolderBottom.priority = 999
+                placeHolderCenter.priority = UILayoutPriority(rawValue: 998)
+                placeHolderBottom.priority = UILayoutPriority(rawValue: 999)
                 addConstraint(placeHolderBottom)
             }
             layoutIfNeeded()
@@ -226,13 +226,13 @@ import UIKit
         //initially the placeholder label will be aligned with bottom left of the text input
         let leftConstraint = NSLayoutConstraint(item: placeHolder, attribute: .left, relatedBy: .equal, toItem: textInput, attribute: .left, multiplier: 1, constant: 2)
         placeHolderCenter = NSLayoutConstraint(item: placeHolder, attribute: .centerY, relatedBy: .equal, toItem: textInput, attribute: .centerY, multiplier: 1, constant: 0)
-        placeHolderCenter.priority = 999
+        placeHolderCenter.priority = UILayoutPriority(rawValue: 999)
         placeHolderCenter2 = NSLayoutConstraint(item: placeHolder, attribute: .centerY, relatedBy: .equal, toItem: secureTextEntryView, attribute: .centerY, multiplier: 1, constant: 0)
-        placeHolderCenter2.priority = 998
+        placeHolderCenter2.priority = UILayoutPriority(rawValue: 998)
         placeHolderBottom = NSLayoutConstraint(item: placeHolder, attribute: .bottom, relatedBy: .equal, toItem: textInput, attribute: .top, multiplier: 1, constant: -2)
         placeholderBottom2 = NSLayoutConstraint(item: placeHolder, attribute: .bottom, relatedBy: .equal, toItem: secureTextEntryView, attribute: .top, multiplier: 1, constant: -2)
-        placeHolderBottom.priority = 999
-        placeholderBottom2.priority = 998
+        placeHolderBottom.priority = UILayoutPriority(rawValue: 999)
+        placeholderBottom2.priority = UILayoutPriority(rawValue: 998)
         addConstraints([leftConstraint,placeHolderCenter, placeHolderCenter2])
         
         //setting up heights as per font sizes
@@ -263,7 +263,7 @@ import UIKit
     }
     
     
-    func rightImageTapped(tap: UITapGestureRecognizer){
+    @objc func rightImageTapped(tap: UITapGestureRecognizer){
         delegate?.rightImageTapped?(forInput: self)
     }
     
@@ -383,7 +383,7 @@ extension NMGTextField: UITextViewDelegate, UITextFieldDelegate{
             return true
         }
         
-        if currentText.trim().count == 0 && text == "\n"{
+        if currentText.count == 0 && text == "\n"{
             //the textView is currently empty and the user has pressed return
             return false
         }else if currentText.last == "\n" && text == "\n"{
@@ -440,14 +440,14 @@ extension UIView {
 extension String{
     func height(withConstrainedWidth width: CGFloat, font: UIFont) -> CGFloat {
         let constraintRect = CGSize(width: width, height: .greatestFiniteMagnitude)
-        let boundingBox = self.boundingRect(with: constraintRect, options: .usesLineFragmentOrigin, attributes: [NSFontAttributeName: font], context: nil)
+        let boundingBox = self.boundingRect(with: constraintRect, options: .usesLineFragmentOrigin, attributes: [NSAttributedStringKey.font: font], context: nil)
         
         return ceil(boundingBox.height)
     }
     
     func width(withConstraintedHeight height: CGFloat, font: UIFont) -> CGFloat {
         let constraintRect = CGSize(width: .greatestFiniteMagnitude, height: height)
-        let boundingBox = self.boundingRect(with: constraintRect, options: .usesLineFragmentOrigin, attributes: [NSFontAttributeName: font], context: nil)
+        let boundingBox = self.boundingRect(with: constraintRect, options: .usesLineFragmentOrigin, attributes: [NSAttributedStringKey.font: font], context: nil)
         
         return ceil(boundingBox.width)
     }
